@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -203,6 +204,7 @@
                 <button class="tab-button" onclick="openScenario(event, 'scenario50k')">Ticket $50.000</button>
                 <button class="tab-button" onclick="openScenario(event, 'scenario20k')">Escenario Crítico (20 Pax)</button>
                 <button class="tab-button" onclick="openScenario(event, 'scenarioTwoSessions')">Dos Turnos (100 Pax)</button>
+                <button class="tab-button" onclick="openScenario(event, 'meatBreakdown')">Desglose de Carnes</button>
             </div>
 
             <div id="scenario40k" class="financial-content">
@@ -585,6 +587,42 @@
                         </tr>
                         <tr>
                             <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="meatBreakdown" class="financial-content" style="display:none;">
+                <h3>Desglose de Carnes (Estimado para 50 Personas)</h3>
+                <p>Estas cantidades son de carne cruda necesaria para obtener las porciones deseadas, considerando la pérdida de peso por cocción (yield loss).</p>
+                <table class="financial-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Carne</th>
+                            <th>Peso Crudo Necesario (aprox.)</th>
+                            <th>Piezas Estimadas (aprox.)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brisket Angus Choice (Americano)</td>
+                            <td>33 kg</td>
+                            <td>6 piezas</td>
+                        </tr>
+                        <tr>
+                            <td>Estomaguillo (Nacional, para Pastrami)</td>
+                            <td>18 kg</td>
+                            <td>3 piezas</td>
+                        </tr>
+                        <tr>
+                            <td>Pulled Pork (Paleta de Cerdo)</td>
+                            <td>15 kg</td>
+                            <td>4 piezas</td>
+                        </tr>
+                        <tr>
+                            <td>Costillas (Rack)</td>
+                            <td>15 kg</td>
+                            <td>8 racks</td>
                         </tr>
                     </tbody>
                 </table>
