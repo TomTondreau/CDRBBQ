@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,9 +7,9 @@
     <title>CASA DE RETIRO BBQ - El Proyecto</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #FFFFFF; /* Fondo blanco */
-            color: #333333; /* Texto oscuro */
+            font-family: 'Georgia', serif; /* Fuente con toque clásico */
+            background-color: #FFFFFF; /* Fondo blanco puro */
+            color: #333333; /* Texto gris oscuro */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -21,9 +22,10 @@
         .header {
             text-align: center;
             padding: 40px 20px;
-            background-color: #F0F0F0; /* Gris claro para el header */
+            background-color: #F8F8F8; /* Gris muy claro para el header */
             border-radius: 8px;
             margin-bottom: 20px;
+            border: 1px solid #E0E0E0;
         }
         .header img {
             max-width: 200px; /* Tamaño del logo */
@@ -31,7 +33,8 @@
             margin-bottom: 20px;
         }
         .header h1 {
-            font-size: 3.5em;
+            font-family: 'Times New Roman', serif; /* Fuente más formal para el título */
+            font-size: 3.8em;
             margin: 0;
             font-weight: 900;
             letter-spacing: 2px;
@@ -49,6 +52,7 @@
             border-bottom: none;
         }
         h2 {
+            font-family: 'Georgia', serif;
             font-size: 2.2em;
             font-weight: 700;
             color: #1A1A1A; /* Negro para los títulos de sección */
@@ -56,6 +60,7 @@
             margin-bottom: 40px;
         }
         h3 {
+            font-family: 'Georgia', serif;
             font-size: 1.6em;
             color: #333333; /* Gris oscuro para subtítulos */
         }
@@ -68,11 +73,47 @@
             flex: 1;
             min-width: 280px;
         }
+        .financial-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #E0E0E0;
+        }
+        .financial-tabs button {
+            background-color: #F0F0F0;
+            border: 1px solid #E0E0E0;
+            border-bottom: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            color: #555555;
+            transition: background-color 0.3s, color 0.3s;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin: 0 2px;
+        }
+        .financial-tabs button:hover {
+            background-color: #E0E0E0;
+            color: #1A1A1A;
+        }
+        .financial-tabs button.active {
+            background-color: #FFFFFF;
+            border-color: #333333;
+            color: #1A1A1A;
+            border-bottom: 1px solid #FFFFFF; /* Para que parezca que la pestaña está abierta */
+        }
+        .financial-content {
+            border: 1px solid #E0E0E0;
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+            background-color: #FFFFFF;
+        }
         .financial-table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 0;
         }
         .financial-table th, .financial-table td {
             border: 1px solid #E0E0E0;
@@ -108,7 +149,7 @@
         <div class="section" id="concepto">
             <h2>Un Club de Amigos, Un Negocio También.</h2>
             <p>CASA DE RETIRO BBQ nace de una idea simple: juntar a los amigos a hacer lo que nos apasiona. Tom Tondreau, con su reconocida trayectoria en el mundo de las hamburguesas y su obsesión por el Texas BBQ, es el Pitmaster y el corazón de este proyecto. Junto a él, <strong>Kike y Mena, co-fundadores y pilares esenciales</strong>, aportan su visión, gestión y recursos para dar vida a esta locura.</p>
-            <p>No somos un restaurante. Somos un club. Organizaremos eventos exclusivos y periódicos donde el protagonista será nuestro ahumador "El Balón", una bestia de 1000 litros transformada a mano. Aquí, el tiempo se detiene y la carne alcanza su estado de perfección. Es un negocio, sí, pero uno fundado en el placer de trabajar juntos y ofrecer una experiencia inolvidable.</p>
+            <p>No somos un restaurante. Somos un club. Organizaremos eventos exclusivos y periódicos donde el protagonista será nuestro ahumador "El Balón", una bestia de 1000 litros transformada a mano. Aquí, el tiempo se detiene y la carne alcanza su estado de perfección. Es un negocio, sí, pero uno fundado en el placer de trabajar juntos y ofrecer una experiencia inolvidable. <em>(¡Y sí, hicimos esto para que sus señoras les den permiso para salir!)</em></p>
         </div>
 
         <div class="section" id="experiencia">
@@ -164,230 +205,242 @@
             <h2>Proyección Económica Inicial (Estimado por Evento para 50 Personas)</h2>
             <p style="text-align: center;">Aquí presentamos tres escenarios de precios por ticket para visualizar la viabilidad y el potencial de crecimiento del proyecto.</p>
 
-            <h3>Escenario 1: Ticket a $48.000 CLP (Propuesta Actual)</h3>
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th>Concepto</th>
-                        <th>Estimado por Evento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Costo por Ticket (Adulto)</td>
-                        <td>$48.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo por Ticket (Niño < 12 años)</td>
-                        <td>$15.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
-                        <td>$2.235.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Ingresos por Bebidas y Descorche (Estimado)</td>
-                        <td>$270.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <th>TOTAL INGRESOS ESTIMADOS</th>
-                        <th>$2.505.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
-                        <td>$495.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Insumos Desechables</td>
-                        <td>$60.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
-                        <td>$49.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Personal Extra (Estación Hamburguesas)</td>
-                        <td>$60.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Ingredientes Hamburguesas</td>
-                        <td>$100.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Honorarios Chef Invitado (Si aplica)</td>
-                        <td>$200.000 - $400.000 CLP (variable)</td>
-                    </tr>
-                    <tr>
-                        <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
-                        <th>$814.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
-                        <th>$1.691.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="financial-tabs">
+                <button class="tab-button active" onclick="openScenario(event, 'scenario40k')">Ticket $40.000</button>
+                <button class="tab-button" onclick="openScenario(event, 'scenario25k')">Ticket $25.000</button>
+                <button class="tab-button" onclick="openScenario(event, 'scenario50k')">Ticket $50.000</button>
+            </div>
 
-            <h3>Escenario 2: Ticket a $25.000 CLP</h3>
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th>Concepto</th>
-                        <th>Estimado por Evento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Costo por Ticket (Adulto)</td>
-                        <td>$25.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo por Ticket (Niño < 12 años)</td>
-                        <td>$8.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
-                        <td>$1.165.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Ingresos por Bebidas y Descorche (Estimado)</td>
-                        <td>$270.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <th>TOTAL INGRESOS ESTIMADOS</th>
-                        <th>$1.435.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
-                        <td>$495.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Insumos Desechables</td>
-                        <td>$60.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
-                        <td>$49.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Personal Extra (Estación Hamburguesas)</td>
-                        <td>$60.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Ingredientes Hamburguesas</td>
-                        <td>$100.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Honorarios Chef Invitado (Si aplica)</td>
-                        <td>$200.000 - $400.000 CLP (variable)</td>
-                    </tr>
-                    <tr>
-                        <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
-                        <th>$814.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
-                        <th>$621.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="scenario40k" class="financial-content">
+                <h3>Escenario 1: Ticket a $40.000 CLP (Propuesta Actual)</h3>
+                <table class="financial-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Estimado por Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Costo por Ticket (Adulto)</td>
+                            <td>$40.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo por Ticket (Niño < 12 años)</td>
+                            <td>$12.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
+                            <td>$1.860.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Ingresos por Bebidas y Descorche (Estimado)</td>
+                            <td>$270.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL INGRESOS ESTIMADOS</th>
+                            <th>$2.130.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
+                            <td>$495.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Insumos Desechables</td>
+                            <td>$60.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
+                            <td>$49.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Personal Extra (Estación Hamburguesas)</td>
+                            <td>$60.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Ingredientes Hamburguesas</td>
+                            <td>$100.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Honorarios Chef Invitado (Si aplica)</td>
+                            <td>$200.000 - $400.000 CLP (variable)</td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
+                            <th>$814.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
+                            <th>$1.316.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-            <h3>Escenario 3: Ticket a $50.000 CLP</h3>
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th>Concepto</th>
-                        <th>Estimado por Evento</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Costo por Ticket (Adulto)</td>
-                        <td>$50.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo por Ticket (Niño < 12 años)</td>
-                        <td>$16.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
-                        <td>$2.330.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Ingresos por Bebidas y Descorche (Estimado)</td>
-                        <td>$270.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <th>TOTAL INGRESOS ESTIMADOS</th>
-                        <th>$2.600.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
-                        <td>$495.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Insumos Desechables</td>
-                        <td>$60.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
-                        <td>$49.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Personal Extra (Estación Hamburguesas)</td>
-                        <td>$60.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Costo Ingredientes Hamburguesas</td>
-                        <td>$100.000 CLP</td>
-                    </tr>
-                    <tr>
-                        <td>Honorarios Chef Invitado (Si aplica)</td>
-                        <td>$200.000 - $400.000 CLP (variable)</td>
-                    </tr>
-                    <tr>
-                        <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
-                        <th>$814.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
-                        <th>$1.786.000 CLP</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="scenario25k" class="financial-content" style="display:none;">
+                <h3>Escenario 2: Ticket a $25.000 CLP</h3>
+                <table class="financial-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Estimado por Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Costo por Ticket (Adulto)</td>
+                            <td>$25.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo por Ticket (Niño < 12 años)</td>
+                            <td>$8.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
+                            <td>$1.165.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Ingresos por Bebidas y Descorche (Estimado)</td>
+                            <td>$270.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL INGRESOS ESTIMADOS</th>
+                            <th>$1.435.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
+                            <td>$495.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Insumos Desechables</td>
+                            <td>$60.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
+                            <td>$49.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Personal Extra (Estación Hamburguesas)</td>
+                            <td>$60.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Ingredientes Hamburguesas</td>
+                            <td>$100.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Honorarios Chef Invitado (Si aplica)</td>
+                            <td>$200.000 - $400.000 CLP (variable)</td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
+                            <th>$814.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
+                            <th>$621.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="scenario50k" class="financial-content" style="display:none;">
+                <h3>Escenario 3: Ticket a $50.000 CLP</h3>
+                <table class="financial-table">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+                            <th>Estimado por Evento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Costo por Ticket (Adulto)</td>
+                            <td>$50.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo por Ticket (Niño < 12 años)</td>
+                            <td>$16.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
+                            <td>$2.330.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Ingresos por Bebidas y Descorche (Estimado)</td>
+                            <td>$270.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL INGRESOS ESTIMADOS</th>
+                            <th>$2.600.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
+                            <td>$495.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Insumos Desechables</td>
+                            <td>$60.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
+                            <td>$49.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Personal Extra (Estación Hamburguesas)</td>
+                            <td>$60.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Costo Ingredientes Hamburguesas</td>
+                            <td>$100.000 CLP</td>
+                        </tr>
+                        <tr>
+                            <td>Honorarios Chef Invitado (Si aplica)</td>
+                            <td>$200.000 - $400.000 CLP (variable)</td>
+                        </tr>
+                        <tr>
+                            <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
+                            <th>$814.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
+                            <th>$1.786.000 CLP</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="section" id="proximos-pasos">
@@ -403,6 +456,28 @@
         </div>
 
     </div>
+
+    <script>
+        function openScenario(evt, scenarioName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("financial-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(scenarioName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Mostrar el primer escenario por defecto al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('scenario40k').style.display = 'block';
+            document.querySelector('.tab-button').classList.add('active');
+        });
+    </script>
 
 </body>
 </html>
