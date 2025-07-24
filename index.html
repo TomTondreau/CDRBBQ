@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,8 +7,8 @@
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background-color: #121212;
-            color: #EAEAEA;
+            background-color: #FFFFFF; /* Fondo blanco */
+            color: #333333; /* Texto oscuro */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -21,38 +20,44 @@
         }
         .header {
             text-align: center;
-            padding: 60px 20px;
-            background-image: url('https://images.unsplash.com/photo-1529193591308-cb0f5a9821d9?q=80&w=2070&auto=format&fit=crop'); /* Imagen de fondo de brasas o humo */
-            background-size: cover;
-            background-position: center;
+            padding: 40px 20px;
+            background-color: #F0F0F0; /* Gris claro para el header */
             border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 200px; /* Tamaño del logo */
+            height: auto;
+            margin-bottom: 20px;
         }
         .header h1 {
-            font-size: 4em;
+            font-size: 3.5em;
             margin: 0;
             font-weight: 900;
             letter-spacing: 2px;
-            color: #FFFFFF;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+            color: #1A1A1A; /* Negro para el título */
         }
         .header p {
-            font-size: 1.2em;
-            color: #FFFFFF;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+            font-size: 1.1em;
+            color: #555555; /* Gris oscuro para el subtítulo */
         }
         .section {
             padding: 40px 20px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #E0E0E0; /* Línea divisoria gris claro */
         }
         .section:last-child {
             border-bottom: none;
         }
         h2 {
-            font-size: 2.5em;
+            font-size: 2.2em;
             font-weight: 700;
-            color: #FFC107; /* Un toque de color dorado/fuego */
+            color: #1A1A1A; /* Negro para los títulos de sección */
             text-align: center;
             margin-bottom: 40px;
+        }
+        h3 {
+            font-size: 1.6em;
+            color: #333333; /* Gris oscuro para subtítulos */
         }
         .flex-container {
             display: flex;
@@ -63,49 +68,30 @@
             flex: 1;
             min-width: 280px;
         }
-        .flex-item h3 {
-            font-size: 1.8em;
-            color: #FFC107;
+        .financial-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
-        .cta-button {
-            display: block;
-            width: fit-content;
-            margin: 40px auto 0 auto;
-            padding: 15px 30px;
-            background-color: #FFC107;
-            color: #121212;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 700;
-            border-radius: 5px;
-            text-align: center;
-            transition: background-color 0.3s;
+        .financial-table th, .financial-table td {
+            border: 1px solid #E0E0E0;
+            padding: 10px;
+            text-align: left;
+            color: #333333;
         }
-        .cta-button:hover {
-            background-color: #FFFFFF;
+        .financial-table th {
+            background-color: #EAEAEA;
+            color: #1A1A1A;
+        }
+        .financial-table tr:nth-child(even) {
+            background-color: #F8F8F8;
         }
         .footer {
             text-align: center;
             padding: 20px;
             font-size: 0.9em;
             color: #888;
-        }
-        .financial-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        .financial-table th, .financial-table td {
-            border: 1px solid #333;
-            padding: 10px;
-            text-align: left;
-        }
-        .financial-table th {
-            background-color: #222;
-            color: #FFC107;
-        }
-        .financial-table tr:nth-child(even) {
-            background-color: #1A1A1A;
         }
     </style>
 </head>
@@ -114,6 +100,7 @@
     <div class="container">
 
         <div class="header">
+            <img src="logocasaderetiro.JPG" alt="Logo Casa de Retiro BBQ">
             <h1>CASA DE RETIRO BBQ</h1>
             <p>El culto al fuego lento, la buena carne y la amistad.</p>
         </div>
@@ -175,7 +162,9 @@
 
         <div class="section" id="proyeccion-economica">
             <h2>Proyección Económica Inicial (Estimado por Evento para 50 Personas)</h2>
-            <p style="text-align: center;">Este es un estimado para un evento con 50 asistentes, base para la autofinanciación del proyecto.</p>
+            <p style="text-align: center;">Aquí presentamos tres escenarios de precios por ticket para visualizar la viabilidad y el potencial de crecimiento del proyecto.</p>
+
+            <h3>Escenario 1: Ticket a $48.000 CLP (Propuesta Actual)</h3>
             <table class="financial-table">
                 <thead>
                     <tr>
@@ -243,6 +232,156 @@
                     <tr>
                         <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
                         <th>$1.691.000 CLP</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Escenario 2: Ticket a $25.000 CLP</h3>
+            <table class="financial-table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Estimado por Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Costo por Ticket (Adulto)</td>
+                        <td>$25.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo por Ticket (Niño < 12 años)</td>
+                        <td>$8.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
+                        <td>$1.165.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Ingresos por Bebidas y Descorche (Estimado)</td>
+                        <td>$270.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <th>TOTAL INGRESOS ESTIMADOS</th>
+                        <th>$1.435.000 CLP</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
+                        <td>$495.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Insumos Desechables</td>
+                        <td>$60.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
+                        <td>$49.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Personal Extra (Estación Hamburguesas)</td>
+                        <td>$60.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Ingredientes Hamburguesas</td>
+                        <td>$100.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Honorarios Chef Invitado (Si aplica)</td>
+                        <td>$200.000 - $400.000 CLP (variable)</td>
+                    </tr>
+                    <tr>
+                        <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
+                        <th>$814.000 CLP</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
+                        <th>$621.000 CLP</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Escenario 3: Ticket a $50.000 CLP</h3>
+            <table class="financial-table">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Estimado por Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Costo por Ticket (Adulto)</td>
+                        <td>$50.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo por Ticket (Niño < 12 años)</td>
+                        <td>$16.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Ingresos por Tickets (45 adultos, 5 niños)</td>
+                        <td>$2.330.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Ingresos por Bebidas y Descorche (Estimado)</td>
+                        <td>$270.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <th>TOTAL INGRESOS ESTIMADOS</th>
+                        <th>$2.600.000 CLP</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Costo Materia Prima (Carnes, Sides, Leña)</td>
+                        <td>$495.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Insumos Desechables</td>
+                        <td>$60.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Bebidas (Cervezas, No Alcohólicas)</td>
+                        <td>$49.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Personal Extra (Estación Hamburguesas)</td>
+                        <td>$60.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Costo Ingredientes Hamburguesas</td>
+                        <td>$100.000 CLP</td>
+                    </tr>
+                    <tr>
+                        <td>Honorarios Chef Invitado (Si aplica)</td>
+                        <td>$200.000 - $400.000 CLP (variable)</td>
+                    </tr>
+                    <tr>
+                        <th>TOTAL COSTOS OPERATIVOS ESTIMADOS (sin Chef Invitado)</th>
+                        <th>$814.000 CLP</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>MARGEN BRUTO ESTIMADO (sin Chef Invitado)</th>
+                        <th>$1.786.000 CLP</th>
                     </tr>
                     <tr>
                         <td colspan="2"><em>Este margen inicial se destinará a pagar el trabajo de construcción del ahumador, adquirir equipos esenciales y generar capital de trabajo para futuros eventos.</em></td>
